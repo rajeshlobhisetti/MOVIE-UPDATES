@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c6c2e1;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header & Navigation#333 */
+header {
+    background: #ffbaba;
+    color: #fff;
+    padding: 3rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    padding: 0 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: red;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+    padding-right: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Gold */
+}
+
+/* Search Bar */
+.search-bar {
+    float: right;
+    padding: 5px 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background: #e6c200;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: url('https://www.deccanchronicle.com/h-upload/2024/05/15/1090041-gnmagcbaqaaljwp.webp') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #1e1d1d;
+}
+
+/* Grid Layouts */
+.news-grid, .movie-grid, .roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.news-item, .movie-card, .role-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover, .movie-card:hover, .role-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-card img, .role-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Movie Card Text Styling */
+.movie-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.movie-card p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+.movie-card p strong {
+    color: #222;
+}
+
+.movie-card p strong::after {
+    content: ":";
+    margin-right: 4px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.contact-subscribe {
+    margin-top: 15px;
+}
+
+.contact-subscribe input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.contact-subscribe button {
+    padding: 10px 15px;
+    background: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-subscribe button:hover {
+    background: #e6c200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero-banner {
+        padding: 60px 0;
+        height: 300px;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .news-grid, .movie-grid, .roles-grid {
+        grid-template-columns: 1fr;
+    }
+}

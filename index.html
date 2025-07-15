@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cine★彡Next</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#news">Latest News</a></li>
+                <li><a href="#movies">Latest Movies</a></li>
+                <li><a href="#roles">Actors</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="movie-search" placeholder="Search movies or actors...">
+                <button onclick="searchMovies()">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-banner">
+            <div class="banner-content">
+                <h1>Discover the Hottest Upcoming Movies!</h1>
+                <p>Stay updated with the latest releases and cinematic trends.</p>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Cine★彡Next, your ultimate destination for the latest movies, trending trailers, and all things cinema — absolutely free!<br>
+
+                🎬 Latest Movie Releases<br>
+                🔥 Trending Teasers & Trailers<br>
+                📅 Upcoming Films Calendar<br>
+                🎞️ Genre-Based Recommendations<br>
+
+                🎯 Our Mission: To bring cinema closer to you — anytime, anywhere, without a price tag.<br>
+
+                🚀 Why Choose Us?<br>
+                100% Free Access to trailers and movie info<br>
+                Watchlists, notifications, cast & crew insights coming soon!
+            </p>
+        </section>
+
+        <section id="news" class="container">
+            <h2>Latest News</h2>
+            <div class="news-grid">
+                <article class="news-item">
+                    <h3>Bollywood Update: New Film Announced!</h3>
+                    <p>Details about a new Bollywood project featuring a popular star.</p>
+                    <span>Date: June 27, 2025</span>
+                </article>
+                <article class="news-item">
+                    <h3>Hollywood Buzz: Blockbuster Sequel in Production</h3>
+                    <p>Get the inside scoop on the highly anticipated sequel.</p>
+                    <span>Date: June 26, 2025</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="movies" class="container">
+            <h2>Latest Movies</h2>
+            <div class="movie-grid">
+                <!-- JavaScript will dynamically populate movie cards here -->
+            </div>
+        </section>
+
+        <section id="roles" class="container">
+            <h2>Main Roles in Films</h2>
+            <div class="roles-grid">
+                <div class="role-card">
+                    <img src="https://via.placeholder.com/150?text=Actor+1" alt="Actor 1">
+                    <h3>Actor Name 1</h3>
+                    <p><strong>Role:</strong> Lead Actor</p>
+                    <p><strong>Bio:</strong> Known for versatile performances. Past works include...</p>
+                </div>
+                <div class="role-card">
+                    <img src="https://via.placeholder.com/150?text=Director+1" alt="Director 1">
+                    <h3>Director Name 1</h3>
+                    <p><strong>Role:</strong> Director</p>
+                    <p><strong>Bio:</strong> Visionary filmmaker behind several hits.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Upcoming Movies. All rights reserved.</p>
+        <div class="contact-subscribe">
+            <form>
+                <input type="email" placeholder="Enter your email for updates">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
